@@ -37,7 +37,7 @@ Examples:
 	aws-cf-invalidate --version
 ```
 
-## Building
+## Building Binaries
 
 This code currently requires version 1.42 or higher of Go.  You'll also need to
 compile different platforms. For example:
@@ -45,10 +45,11 @@ compile different platforms. For example:
 GOOS=windows GOARCH=amd64 go build -o aws-cf-invalidate-amd64.exe -i
 GOOS=linux GOARCH=amd64 go build -o aws-cf-invalidate-linux-amd64 -i
 ```
-To compile all versions, run the build.sh script:
+Only 64 bit binaries (amd64) are distributed with this repo. To compile all versions, run the build.sh script:
 ```
 . build.sh
 ```
+
 Information on Golang installation, including pre-built binaries, is available at
 <http://golang.org/doc/install>.
 
